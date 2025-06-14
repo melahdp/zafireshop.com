@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tienda de Cuentas Steam - Melanie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #121212;
+      color: #e1e8f7;
+      font-family: 'Poppins', sans-serif;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #4A90E2;
+      margin-bottom: 10px;
+    }
+    .descripcion {
+      color: #bbb;
+      margin-bottom: 40px;
+    }
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .product {
+      background-color: rgba(25, 25, 25, 0.9);
+      border-radius: 20px;
+      padding: 24px;
+      width: 280px;
+      box-shadow: 0 8px 32px rgba(74, 144, 226, 0.35);
+    }
+    .product h3 {
+      margin-bottom: 10px;
+      color: #4A90E2;
+    }
+    .stock, .nota {
+      font-size: 0.9rem;
+      color: #bbb;
+      margin-top: 8px;
+    }
+    a.paypal-btn {
+      display: block;
+      background-color: #4A90E2;
+      color: #121212;
+      border-radius: 16px;
+      padding: 12px 0;
+      font-weight: 700;
+      font-size: 1.1rem;
+      text-decoration: none;
+      margin-top: 15px;
+      box-shadow: 0 6px 18px #3b6fc3cc;
+      transition: all 0.3s ease;
+    }
+    a.paypal-btn:hover {
+      background-color: #3b6fc3;
+      color: white;
+      transform: scale(1.05);
+    }
+    #resultado {
+      margin-top: 40px;
+      font-size: 1.2rem;
+      color: #4A90E2;
+    }
+    footer {
+      margin-top: 60px;
+      color: #bbb;
+      font-size: 0.95rem;
+    }
+    .discord-link {
+      display: inline-block;
+      color: #7289da;
+      font-weight: bold;
+      margin-top: 10px;
+      text-decoration: none;
+    }
+    .discord-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Tienda de Cuentas Steam</h1>
+  <p class="descripcion">Compra cuentas Steam al instante: desde básicas hasta premium. Pago rápido por PayPal.</p>
+
+  <div class="productos">
+
+    <!-- Básico -->
+    <div class="product">
+      <h3>€0,20 - Básico</h3>
+      <p>Cuentas totalmente aleatorias.</p>
+      <p class="stock" id="stock-barata">Stock: 15</p>
+      <a href="https://paypal.me/MelanieTrigo/0.20" target="_blank" class="paypal-btn">Pagar por PayPal</a>
+      <p class="nota">Usa "Amigos y Familiares" si es posible.</p>
+    </div>
+
+    <!-- Avanzado -->
+    <div class="product">
+      <h3>€0,50 - Avanzado</h3>
+      <p>Cuentas con entre 100 y 1000 juegos.</p>
+      <p class="stock" id="stock-media">Sin stock</p>
+      <a href="https://paypal.me/MelanieTrigo/0.50" target="_blank" class="paypal-btn">Pagar por PayPal</a>
+      <p class="nota">Stock en reposición.</p>
+    </div>
+
+    <!-- Premium -->
+    <div class="product">
+      <h3>€1,00 - Premium</h3>
+      <p>Cuentas con entre 1000 y 10000 juegos.</p>
+      <p class="stock" id="stock-alta">Sin stock</p>
+      <a href="https://paypal.me/MelanieTrigo/1.00" target="_blank" class="paypal-btn">Pagar por PayPal</a>
+      <p class="nota">Stock en reposición.</p>
+    </div>
+
+  </div>
+
+  <div id="resultado">
+    Una vez que pagues, recibirás tu cuenta. Contacto abajo si hay problemas.
+  </div>
+
+  <footer>
+    Contacto por Discord:<br>
+    <a href="https://discord.gg/H3T3YU27Mv" class="discord-link" target="_blank">discord.gg/H3T3YU27Mv</a>
+  </footer>
+
+</body>
+</html>
